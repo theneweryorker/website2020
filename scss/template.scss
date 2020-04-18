@@ -1,0 +1,138 @@
+@import 'globals';
+
+// #header{
+//   font-family: 'xenos_medium';
+//   font-size: 80px;
+//   z-index: -1000;
+// }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+
+}
+
+.pink{
+  // background-color: #FEE2D5;
+  background-color: #ECDCC6;
+}
+
+
+
+.border{
+  border: 2px solid black;
+}
+
+.logo{
+  grid-column: 5 / span 1;
+  grid-row: 1;
+}
+
+.explanation{
+  grid-column: 3/ span 6;
+  grid-row: 2;
+  // margin-top: 30%;
+}
+
+
+.explanatory_text{
+  font-family: 'glacial_indifferenceregular';
+  font-size: 18px;
+  // text-align: center;
+}
+
+.explanation2{
+  @extend .explanation;
+  grid-row: 5;
+  margin-top: 30%;
+}
+
+.explanation3{
+  grid-column: 6 / span 3;
+  grid-row: 7;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+
+.explanation4{
+  grid-column: 3/ span 6;
+  grid-row: 9;
+  margin-top: 10%;
+}
+
+.explanation5{
+  grid-column: 3/ span 6;
+  grid-row: 14;
+  margin-top: 10%;
+}
+
+.short{
+  grid-column: 3 /span 2;
+}
+
+.left{
+  grid-column: 3 / span 1;
+}
+
+.middle{
+  grid-column: 4 / span 1;
+}
+
+.far-right{
+  grid-column: 8 / span 1;
+}
+.right{
+  grid-column: 5/ span 1;
+  // margin-left: 50%;
+}
+
+.far_right{
+  grid-column: 6 / span 1;
+}
+
+.far_left{
+  grid-column: 2 / span 1;
+}
+
+.first{
+  grid-row: 3;
+  padding-top: 50%;
+}
+
+.second{
+  grid-row: 5;
+  padding-top: 50%;
+}
+
+.third{
+  grid-row: 7;
+  padding-top: 50%;
+}
+
+.fourth{
+  grid-row: 11;
+  padding-top: 50%;
+}
+
+.fifth{
+  grid-row: 13;
+  padding-top: 50%;
+}
+
+.sixth{
+  grid-row: 15;
+  padding-top: 50%;
+}
+
+.seventh{
+  grid-row: 17;
+  padding-top: 50%;
+}
+
+//HORIZONS//
+// #code:hover{
+// // display: none;
+//     background-image: url('../assets/horizons/horizons_2.png');
+//     max-width: 5vw;
+//
+// }

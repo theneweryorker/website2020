@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Holly Li</title>
+    <link rel="stylesheet" type="text/css" href="../css/me.css">
+    <link rel="stylesheet" type="text/css" href="../css/gifs.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/front_menu.css"> -->
+
+
+    <!-- <link href="//fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css"/> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/t.js"></script>
+    <script type="text/javascript">
+
+      $(function(){
+
+       $('pre').t({
+          caret:'<span style="color:red;">&para;</span>',
+          speed:15,
+          delay:1,
+          speed_vary: true,
+          mistype: true,
+          blink: false,
+
+
+          typing:function(e,t,l,c){
+
+            if(/\u200c/.test(c)){
+             $(e).t('pause');
+            }
+
+            if(c=='\u200d'){
+             $(e).find('del').animate({_:1},{duration:5e2,complete:function(){$(this).addClass('blue');}});
+            }
+
+          }
+      }).click(function(){
+        $(this).t('pause',false);
+        // alert('pressed key');
+        // $('pre').setTimeout(function(){$('pre').t('pause',false);}, 1000);
+      });
+        // $(this).setTimeout(function(){$(this).t('pause',false);}, 1000);});
+
+
+      // $(document).on('click','#add-time-btn',function(){
+      //
+      //   $('pre').t('add','&gt; '+(new Date()).getTime()+'\n');
+      //
+      // });
+      // $(document).keypress(function(){
+      //   alert('pressed key');
+      //   $('pre').setTimeout(function(){$(this).t('pause',false);}, 1000);});
+      //
+      //
+      //
+      //
+      });
+      </script>
+
+
+</head>
+
+
+<body class="loaded">
+
+<header>
+		<div id="menu" style="z-index: 1000;">
+			<div class="menu-container" style="padding-left: 4%; padding-top: 3.5%;">
+					<ul class="menu-nav" style="list-style-type: none;">
+						<li class="nav-item"><a class="page-port-link" href="/pages/arts.html"><span class="msk"><span>RANDOM ARTS</span></span></a></li>
+						<li class="nav-item"><a class="page-photo-link" href="/pages/photography.html"><span class="msk"><span>PHOTOGRAPHY</span></span></a></li>
+						<li class="nav-item"><a class="page-home-link" href="../index.html"><span class="msk"><span>GO HOME</span></span></a></li>
+            <li class="nav-item"><a class="page-projects-link" href="/pages/branding.html"><span class="msk"><span>PROJECTS</span></span></a></li>
+
+
+					</ul>
+				</div>
+			</div>
+    </header>
+
+  <div id="show-gif"></div>
+  <section>
+
+    <pre>
+
+
+    Hello. <ins>1.0</ins>
+    My name is Holly Li.<ins>1.0</ins>
+    I grew up in Athens, Ohio, a town in the
+    middle of no where, where an immense amount
+    of nothing happens all of the time.
+    (Press a, then click here!)&#x200c;
+
+    I graduated from the University of Pennsylvania,
+    where I studied management and marketing but spent
+    most of my time
+    thinking about design.
+    (Press b, then click here)&#x200c;
+
+    I love tacos,
+    radical history,
+    product design,
+    long walks exploring cities,
+    and non sequiturs.
+    (Press c, then click here.)&#x200c;
+
+    Ask me about lots of things:
+    (Press d, then click here.)&#x200c;
+
+  Still self-actualizing.
+    (Press e, then click here.)&#x200c;
+
+
+    Hit me up at thisishollyli@gmail.com.
+
+
+    <audio id="audio" src="../assets/mia.mp3" type="audio/mpeg" loop>WHAT</audio>
+
+    </pre><br/><br/>
+
+  </section>
+
+
+  <script src="../js/hotdog.js"></script>
+
+
+
+</body>

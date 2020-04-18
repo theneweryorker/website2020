@@ -1,0 +1,66 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+#display {
+  display: none; }
+
+#show-gif {
+  position: fixed;
+  top: -10%;
+  right: -10%;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-color: #000;
+  background-size: cover;
+  display: none; }
+
+#social {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  height: 25px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+#social > .social-share {
+  height: 25px;
+  padding: 0;
+  vertical-align: middle; }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.flicker {
+  -webkit-animation: flickerAnimation 2.8s infinite;
+  -moz-animation: flickerAnimation 2.8s infinite;
+  animation: flickerAnimation 2.8s infinite; }
+
+/*# sourceMappingURL=gifs.css.map */
